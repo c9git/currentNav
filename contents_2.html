@@ -10,8 +10,6 @@
 </head>
 
 <body>
-    <h1>currentNav</h1>
-    <h2>view</h2>
     <nav id="app">
         <ul>
             <li :class="{'current':isCurrentPath('/currentNav/index.html')}">
@@ -25,26 +23,6 @@
             </li>
         </ul>
     </nav>
-    <h2>code</h2>
-    <pre>
-        <code>
-            &lt;nav>
-                &lt;ul>
-                    &lt;li :class="{'current':isCurrentPath('/currentNav/index.html')}">
-                        &lt;a href="/currentNav/index.html">index</a>
-                    &lt;/li>
-                    &lt;li :class="{'current':isCurrentPath('/contents_1.html')}">
-                        &lt;a href="/currentNav/contents_1.html">contents_1</a>
-                    &lt;/li>
-                    &lt;li :class="{'current':isCurrentPath('/contents_2.html')}">
-                        &lt;a href="/currentNav/contents_2.html">contents_2</a>
-                    &lt;/li>
-                &lt;/ul>
-            &lt;/nav>
-        </code>
-    </pre>
-    <h2>link</h2>
-    <a href="https://github.com/c9git/currentNav" target="_brank">GitHub</a>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script>
