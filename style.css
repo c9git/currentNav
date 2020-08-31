@@ -4,17 +4,31 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #333;
-    padding: 30px 0;
+    padding: 30px;
     max-width: 1200px;
     margin: 0 auto;
+    font-size: 16px;
 }
 
 a:hover {
-    opacity: .7;
+    opacity: 0.7;
 }
 
-nav li.current{
+nav li.current {
     font-weight: bold;
+}
+
+h1 {
+    font-size: 24px;
+}
+h1::before {
+    content: "■ ";
+}
+
+h2 {
+    font-size: 20px;
+    border-bottom: solid 1px;
+    margin: 20px 0 10px;
 }
 
 
