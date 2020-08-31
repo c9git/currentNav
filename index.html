@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currentNavVue</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="app">
+        <ul>
+            <li :class="{'current':isCurrentPath('/index.html')}">
+                <a href="/index.html">index</a>
+            </li>
+            <li :class="{'current':isCurrentPath('/contents_1.html')}">
+                <a href="/contents_1.html">index</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            path: ''
+        },
+        mounted() {
+            this.path = location.pathname;
+        },
+        methods: {
+            isCurrentPath(url) {
+                return this.path === url;
+            }
+        },
+    })
+</script>
+
+</html>
